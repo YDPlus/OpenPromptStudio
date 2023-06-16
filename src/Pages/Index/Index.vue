@@ -1,11 +1,6 @@
 <template>
     <div class="IndexPage">
         <nav>
-            <a class="logo" href="https://github.com/Moonvy/OpenPromptStudio"><b>OPS</b>/OpenPromptStudio</a>
-            <a class="icon-link" href="https://github.com/Moonvy/OpenPromptStudio" target="_blank">
-                <Icon icon="radix-icons:github-logo"
-            /></a>
-
             <div class="dict-button-box" @click="toggleDictPad()">
                 提示词词典
                 <button class="icon dict-button"><Icon icon="mingcute:book-4-fill" /></button>
@@ -25,12 +20,6 @@
             </div>
             <PromptDict />
         </section>
-        <footer>
-            <a href="https://github.com/Moonvy/OpenPromptStudio" target="_blank">
-                <img class="icon" src="/icon.svg" /> OpenPromptStudio / v{{ version }} /
-            </a>
-            <a href="https://moonvy.com/?homepage"> made by <img src="./assets/logo_full_cn.svg" /></a>
-        </footer>
     </div>
 </template>
 <style lang="scss">
@@ -80,39 +69,6 @@
             right: 20px;
             top: 14px;
             z-index: 50;
-        }
-    }
-
-    > footer {
-        display: flex;
-        place-content: flex-end;
-        place-items: center;
-        padding-bottom: 20px;
-        padding-top: 32px;
-        padding-right: 20px;
-        border-top: 1px solid #d7d7d7;
-        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.9215686275) inset;
-
-        a {
-            display: flex;
-            place-content: flex-end;
-            place-items: center;
-            text-decoration: none;
-            color: #4b4a4a;
-            font-family: "JetBrains Mono";
-            font-size: 13px;
-            img {
-                margin-left: 6px;
-                height: 21px;
-            }
-
-            .icon {
-                margin-right: 0.5em;
-            }
-
-            &:not(:last-child) {
-                margin-right: 0.5em;
-            }
         }
     }
 
