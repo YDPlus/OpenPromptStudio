@@ -140,10 +140,6 @@
             </div>
         </div>
 
-        <!--    在使用 indexfs.moonvy.com 的翻译服务时显示广告，尝试给腾讯翻译的服务费回血    -->
-        <div v-if="needShowAd" class="回血-box" v-tooltip="'广告商提供的内容，与本网站（Moonvy 月维）无关'">
-            <a href="https://nf.video/yinhe/web?sharedId=124758" target="_blank"> <img src="./Assets/ad.png" /> </a>
-        </div>
     </div>
 </template>
 <style lang="scss">
@@ -176,14 +172,6 @@
             select {
                 width: 130px;
             }
-        }
-    }
-    .回血-box {
-        position: absolute;
-        bottom: -93px;
-        left: 18px;
-        img {
-            height: 52px;
         }
     }
 }
